@@ -30,3 +30,9 @@ Evaluación
 - Así el diseño del scraper se valorará en un 50% y el otro 50% se valorará sobre el control de eventos, funciones, controlar errores básicos, control de excepciones...
 
 - Si los resultados obtenidos aparte de almacenarlos en un fichero XML o JSON los guardas de forma que se cree un fichero HTML y que en este aparezca una tabla con los datos formateados este aspecto se valorará altamente. Recomendación: No te compliques y almacena los datos básicos y más simples en la tabla si no quieres que se muestre todos los datos que si son básicos para el formato de exportación.
+
+INSTALACION
+==
+
+	scrapy crawl PostGrabber -o post.xml
+	
