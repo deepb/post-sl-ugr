@@ -1,0 +1,9 @@
+*~
+*.o
+*.pyc
+*.pyo
+*.odt
+*.gddoc
+@*
+doc/
+*.e4p
