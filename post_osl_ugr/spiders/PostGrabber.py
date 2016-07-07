@@ -7,7 +7,6 @@ date: $Date$
 from post_osl_ugr.items import PostOslUgrItem
 from scrapy import Request
 from scrapy.spiders import Spider
-import re
 
 class PostgrabberSpider(Spider):
     name = "PostGrabber"
@@ -29,13 +28,12 @@ class PostgrabberSpider(Spider):
             for c in cl:
                 #print "clase :" , c
                 if c.startswith('tag-'):
-                    item['list_tag'].append(c)
+                    item['list_tag'].append(c[4:])
                 elif c.startswith('category-'):
-                    item['list_cat'].append(c)
+                    item['list_cat'].append(c[9:])
             yield Request(article.xpath('.//@href').extract()[0], 
                 callback=self.parse_post, meta={'item': item})
-            #print item
-            #yield item
+
 
     def parse_post(self, response):
         item = response.meta['item']
