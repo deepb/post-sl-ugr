@@ -35,5 +35,5 @@ INSTALACION
 ==
 	git clone https://github.com/deepb/post-sl-ugr.git
 	cd post-sl-ugr
-	scrapy crawl PostGrabber -o post.xml
+	scrapy crawl PostGrabber -o posts.xml
 	
