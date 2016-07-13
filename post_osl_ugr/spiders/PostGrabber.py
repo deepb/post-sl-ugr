@@ -37,5 +37,8 @@ class PostgrabberSpider(Spider):
 
     def parse_post(self, response):
         item = response.meta['item']
-        item['contenido'] = response.xpath('//section[@class="entry-content "]').extract()
+        co = response.xpath('//section[@class="entry-content "]').extract()
+        item['contenido'] = ''
+        for i, j in enumerate(co):
+            item['contenido'] += j.encode('utf-8', errors='replace').decode('utf-8')
         yield item
