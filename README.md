@@ -33,7 +33,18 @@ Evaluación
 
 INSTALACION
 ==
+
+Se necesita _Python 2.x_ y _Scrapy 1.x_
+
+Para instalar la araña:
+
 	git clone https://github.com/deepb/post-sl-ugr.git
 	cd post-sl-ugr
-	scrapy crawl PostGrabber -o posts.xml
-	
+
+Y para ejecutarla:
+
+	scrapy crawl PostGrabber
+
+El resultado de la araña se encuentra en:
+
+	PostGrabber.xml

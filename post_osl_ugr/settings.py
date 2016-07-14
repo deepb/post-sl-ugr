@@ -62,9 +62,9 @@ USER_AGENT = 'Mozilla/5.0 (X11; Linux x86_64; rv:47.0) Gecko/20100101 Firefox/47
 
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'post_osl_ugr.pipelines.SomePipeline': 300,
-#}
+ITEM_PIPELINES = {
+    'post_osl_ugr.pipelines.XmlExportPipeline': 300,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See http://doc.scrapy.org/en/latest/topics/autothrottle.html
