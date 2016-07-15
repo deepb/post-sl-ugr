@@ -45,6 +45,9 @@ Y para ejecutarla:
 
 	scrapy crawl PostGrabber
 
-El resultado de la araña se encuentra en:
+Los resultados de la araña se encuentran en:
 
 	PostGrabber.xml
+y
+
+	PostGrabber.html
